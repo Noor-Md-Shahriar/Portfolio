@@ -1,100 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Noor Md Shahriar</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noor Md Shahriar - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-photo.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .card {
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Noor Md Shahriar</h1>
-            <p>Senior Lecturer, Electrical & Electronics Engineering | Researcher in Metamaterial Absorbers</p>
-        </div>
-    </header>
-
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#contact">Contact</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Noor Md Shahriar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am Noor Md Shahriar, Senior Lecturer in the Department of Electrical & Electronics Engineering at the University of Global Village (UGV), Barishal, Bangladesh. I completed my B.Sc. in Engineering from Rajshahi University of Engineering & Technology (RUET) and am currently pursuing an M.Sc. in Engineering at RUET.</p>
-            <p>With over 4 years of teaching experience, my research focuses on metamaterial absorbers. I aim to pursue a Ph.D. abroad and further my contributions to academia and research.</p>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Senior Lecturer | Researcher | EEE Enthusiast</p>
+    </div>
+  </section>
 
-    <section id="research">
-        <div class="container">
-            <h2>Research</h2>
-            <p>My research interests include:</p>
-            <ul>
-                <li>Metamaterial Absorbers</li>
-                <li>Applications of Metamaterials in Engineering</li>
-                <li>Machine Learning Integration with Metamaterial Design</li>
-            </ul>
-        </div>
-    </section>
+  <!-- About Me Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Me</h2>
+      <p>I am Noor Md Shahriar, a Senior Lecturer in the Department of Electrical & Electronics Engineering at the University of Global Village (UGV), Barishal, Bangladesh. I completed my B.Sc. in Engineering from Rajshahi University of Engineering & Technology (RUET) and am currently pursuing an M.Sc. in Engineering at RUET. My research focuses on metamaterial absorbers, and I aim to pursue a Ph.D. abroad to further contribute to academia and research.</p>
+    </div>
+  </section>
 
-    <section id="teaching">
-        <div class="container">
-            <h2>Teaching</h2>
-            <p>Courses taught as a Senior Lecturer include:</p>
-            <ul>
-                <li>Electromagnetic Theory</li>
-                <li>Signal Processing</li>
-                <li>Control Systems</li>
-                <li>Basic Electrical Circuits</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Research Section -->
+  <section id="research" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Research</h2>
+      <ul>
+        <li>Metamaterial Absorbers</li>
+        <li>Applications of Metamaterials in Engineering</li>
+        <li>Machine Learning Integration with Metamaterial Design</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <p>Here are some of my recent publications:</p>
-            <ul>
-                <li><strong>Title:</strong> Example Research Paper on Metamaterials <br><strong>Journal:</strong> Example Journal, 2023</li>
-                <li><strong>Title:</strong> Machine Learning in Electromagnetic Applications <br><strong>Conference:</strong> Example Conference, 2022</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Teaching Section -->
+  <section id="teaching" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Teaching</h2>
+      <p>I have 4+ years of teaching experience and have taught courses such as:</p>
+      <ul>
+        <li>Electromagnetic Theory</li>
+        <li>Signal Processing</li>
+        <li>Control Systems</li>
+        <li>Basic Electrical Circuits</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="interests">
-        <div class="container">
-            <h2>Personal Interests</h2>
-            <p>Beyond academics and teaching, I enjoy:</p>
-            <ul>
-                <li>Playing PC Games</li>
-                <li>Watching Movies, TV Series, and Anime</li>
-                <li>Reading Fiction, Non-fiction, and Comics</li>
-                <li>Cycling and Exploring New Places</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Publications Section -->
+  <section id="publications" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Publications</h2>
+      <p>Here are some of my recent publications:</p>
+      <ul>
+        <li><strong>Example Research Paper on Metamaterials:</strong> Published in Example Journal, 2023</li>
+        <li><strong>Machine Learning in Electromagnetic Applications:</strong> Presented at Example Conference, 2022</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:noor.shahriar1@gmail.com">noor.shahriar1@gmail.com</a></p>
-            <p>Phone: +8801743500587</p>
-            <p>Location: Barishal, Bangladesh</p>
-        </div>
-    </section>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <p class="text-center">Feel free to reach out to me for collaborations or discussions:</p>
+      <div class="text-center">
+        <p>Email: <a href="mailto:noor.shahriar1@gmail.com">noor.shahriar1@gmail.com</a></p>
+        <p>Phone: +8801743500587</p>
+        <p>Location: Barishal, Bangladesh</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Noor Md Shahriar | All Rights Reserved</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Noor Md Shahriar | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
